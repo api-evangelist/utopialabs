@@ -1,8 +1,26 @@
 aid: utopialabs
-name: Utopialabs
-description: Utopialabs is a company surfaced as a portfolio company of kindred-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/utopialabs.png
+name: Utopia Labs
+description: 'Utopia Labs was a crypto payments startup ("the premier stablecoin studio")
+  that spent three years building onchain payments products — including the Tori wallet
+  and Offramps.eth, plus consumer USD-to-crypto on/off-ramp tools for paying friends
+  and family. It was surfaced in the API Evangelist network as a portfolio company of
+  kindred-ventures. The cofounders (Kaito, Jason, and Alex) announced they were joining
+  Coinbase, and both Tori and Offramps.eth were shut down as of November 13, 2024. The
+  utopialabs.com domain still resolves but the website has been removed (HTTP 404);
+  the company exposes no public API, developer portal, or documentation surface. This
+  profile is retained as a historical company record.'
 url: https://raw.githubusercontent.com/api-evangelist/utopialabs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +28,23 @@ x-backed-by:
 - kindred-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: coinbase
+x-status-detail: Cofounders announced joining Coinbase; products Tori and Offramps.eth
+  shut down 2024-11-13 (per archived utopialabs.com farewell notice, January 2025
+  snapshot). Website since removed — utopialabs.com now returns HTTP 404.
+x-website-status: http-404
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Cryptocurrency
+- Payments
+- Stablecoins
+- Onchain Payments
+- Wallets
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/utopialabs-domain-security.yml
 - type: Website
   url: https://utopialabs.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
